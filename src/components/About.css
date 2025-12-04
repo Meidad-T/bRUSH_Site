@@ -1,0 +1,45 @@
+.about {
+    padding: 100px 0;
+    background-color: transparent;
+}
+
+.section-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 60px;
+    text-align: center;
+    color: var(--color-text);
+    font-family: var(--font-hand);
+    transform: rotate(-2deg);
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background: #fff;
+    color: var(--color-text);
+    font-size: 1.3rem;
+    line-height: 1.8;
+    box-shadow: var(--shadow-sketch);
+    border: 2px solid var(--color-text);
+    transform: rotate(1deg);
+    position: relative;
+}
+
+.about-content::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 30px;
+    background: rgba(255, 214, 0, 0.5);
+    /* Tape look */
+    transform: translateX(-50%) rotate(-1deg);
+}
+
+.about-content p {
+    margin-bottom: 20px;
+}
